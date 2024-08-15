@@ -390,7 +390,7 @@
                     outputDiv.style.display = 'block';
 
                     // Assuming the JSON result has a field named 'schedule'
-                    const markdown = `### Nutrition Plan\n\n${result.schedule || 'No schedule available.'}`;
+                    const markdown = `${result.schedule || 'No schedule available.'}`;
                     outputDiv.innerHTML = marked.parse(markdown);
                     outputDiv.scrollIntoView({ behavior: 'smooth' });
                 })
